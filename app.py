@@ -1,7 +1,7 @@
 import pandas as pd
 import streamlit as st
 
-st.header("Loan Advance Calculator")
+st.sidebar.header("Loan Advance Calculator")
 start = st.sidebar.date_input("Date of Advancement")
 end = st.sidebar.date_input("Date of Deal Close")
 advance = st.sidebar.number_input("Amount to be advanced", value=1000)
