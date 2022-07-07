@@ -9,5 +9,5 @@ delta = (end - start).days
 st.write("Days until close: {}".format(delta))
 
 fee = 0.75 * advance / 1000 * delta + 50
-st.write("Borrow fee to be paid is ${:,.2f}".format(fee))
+st.metric("Borrow fee to be paid is", "${:,.2f}".format(fee))
 
