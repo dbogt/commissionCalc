@@ -5,7 +5,7 @@ st.header("Loan Advance Calculator")
 start = st.date_input("Date of Advancement")
 end = st.date_input("Date of Deal Close")
 advance = st.number_input("Amount to be advanced", value=1000)
-delta = (end - start).dt.days
+delta = (end - start).days
 st.write(delta)
 
 fee = 0.75 * advance / 1000 * delta + 50
